@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flipkart</title>
+    <link rel ="icon" herf="https://www.nicepng.com/png/detail/790-7909408_fli…essories-for-mobile-headphones-tablet-icon-of.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style type="text/css">
+        .header1 { width: 99%; height: 60px; background-color: #2370f4;}
+        .header3 { width:99%; height: 300px; margin-top: 10px; background-color: rgb(235, 235, 235);}
+        .header4 {width:256.5px; height: 370px; float:left}
+        .h4side {width: 900px; height: 370px; margin-left: 270px;justify-content: center; display: flex; padding: 0px 50px;}
+        .exploreplus {font-size: 15px; margin-bottom: 10px; margin-left: 190px; font-style: italic; color: white;float: left;}
+        .plus    {color:#f8e006; font-weight: 500;}
+        .search {position: absolute; left: 340px; top: 21px;  box-shadow: -3px 3px 5px rgba(0,0,0,0.2), 3px 3px 5px rgba(0,0,0,0.2);}
+        .search i{color: #2370f4; position: absolute; right: 10px; top: 8px;}
+        .searchoptioncontener {position: absolute; width: 334px; height: 350px; background-color: white; box-shadow: -5px 5px 7px rgba(0,0,0,0.2), 5px 5px 10px rgba(0,0,0,0.2); border-top: #ccc; display: none;}
+        .searchoptioncontent {display: flex;}
+        .searchoptioncontent h4{padding-left: 10px; margin-left: 30px; color: grey; font-size: 14px; margin-top: 17px;}
+        .searchoptioncontent i{color:grey; margin-top: 50px;margin-right: 300px;}
+        .searchoptioncontent p{padding-left: 10px; margin-left: 22px; color: rgb(10, 7, 7); font-size: 16px; margin-top: 5px;}
+        .search:focus-within .searchoptioncontener{display: block;}
+
+
+        .login {position: absolute; left: 700px; top: 22px; padding: 7px 40px; font-size: 15px; font-weight: 600; border: none;outline: none; color: #2874f0; cursor: pointer; background-color:white; }
+        .HoverLogin{width: 190px; height: 360px; box-shadow: -5px 5px 7px rgba(0,0,0,0.2), 5px 5px 10px rgba(0,0,0,0.2); position: absolute; top: 69px; left: 660px; align-items: center; flex-direction: column; padding: 0px 5px; display: none; background-color: white;}
+        .trangle-up {height: 0; width: 0; border-left: 7px solid transparent; border-right: 7px solid transparent; border-bottom: 14px solid white; position: relative; top:-14px}
+        .customer {display: flex; justify-content: space-between; width: 100%; font-size: 15px;}
+        .customer h4:hover {text-decoration: underline;}
+        .loginoptioncontent {width: 190px;}
+        .logincontent {display: flex;}
+        .logincontent i{color:royalblue; margin-top: 15px;}
+        .logincontent p{padding-left: 10px;}
+        .login:hover{background-color: black; color: white;}
+        .login:Hover+.HoverLogin {display: flex; cursor: pointer;}
+
+        .iconname {position: absolute; left: 850px;top: 28px;  }
+        .angledownicon:hover .moreicon{ transform: rotate(180deg);}
+        .moreoptioncontener { position: relative; height: 1px; display: none;}
+        .moreoptioncontent {box-shadow: -5px 5px 7px rgba(0,0,0,0.2), 5px 5px 10px rgba(0,0,0,0.2); color: black; width: 200px; margin-left: 225px; position: absolute; margin-top: 23px; border-radius: 5px; background-color: white;}
+        .moreoption {display: flex; padding: 5px; display:flex; align-items: center;}
+        .moreoption p{padding-left: 5px; font-size: 15px;}
+        .moreoption i{font-size: 15px; color: #2370f4;}
+        .angledownicon:hover .moreoptioncontener{display: block;}
+        .forHover {color: white; }
+        .forHover:hover {color: black;}
+        .forhover2 {color:white}
+        .forhover2:hover{color:black}
+        .fa-solid.fa-angle-down:hover{color:black;}
+
+
+        .header2 {height: 100; width: 1231px; justify-content: center; display: flex; padding: 0px 50px; border-bottom: 1px solid #ccc;}
+        .header2product img{height: 64px; width: 64px;}
+        .header2product p{font-weight: 600; position: relative; top: -10px;}
+        .header2product {width: 80px; cursor: pointer; flex: 1px;}
+        .header2product:hover p{color: #2370f4; font-size: large;}
+        
+        
+
+        .Slider {width: 100%; display: flex; padding: 20px 0px; overflow: hidden;}
+        .sliderimage {width: 100%; padding-right: 20px; height: 250px;}
+        .sliderimagemain {display: flex; padding: 0px 10px;}
+        .sliderbutton {margin: auto; width: 10px;}
+        .btn {padding: 35px 15px; background-color: white; font-size: 30px; outline: none; border: none; border-radius: 5px;}
+        .btnleft {position: relative; z-index: 5;}
+        .btnright {position: relative; left: -35px;}
+        .sliderimage:hover {-ms-transform: scale(1.05); -webkit-transform: scale(1.05); transform: scale(1.05);}
+
+
+
+        .photo {width: 256.5px;position: absolute; bottom:-209px;}
+        .content {font-weight: 600px; font-size: 30px; position: absolute; left: 20px; margin-top: 110px;}
+        .box {width: 90px; height:35px; border-radius: 2px; background-color: #2874f0; position: absolute; left: 90px; margin-top: 200px; font-size: 13px;}
+        .view {color:white; position: absolute;left: 13.5px; bottom: -5px;}
+                  
+
+        .h4product .goodsname{text-align: center; margin-right:30px;}
+        .h4product .price{text-align: center;margin-right: 20px;}
+        .h4product .company{text-align: center; margin-right: 23px;}
+        .goods {margin-top: 40px; margin-right: 40px;}
+        .goodsname {font-size: 18px; font-weight: 500;}
+        .price {font-size: 20px; font-weight: 500; color:#388e3c;}
+        .company {color: grey;}
+        .goods:hover { -ms-transform: scale(1.05);
+            -webkit-transform: scale(1.05); 
+              transform: scale(1.05); }
+
+        
+        
+    </style>
+</head>
+<body>
+    <div class="header1">
+        <div class="logo">
+            <img src="https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/flipkart-plus_8d85f4.png" width="75px" style= "margin-left: 200px; margin-top: 10px;">
+        </div>
+        <div class="exploreplus">
+            <a class= explore>Explore</a>
+            <span class="plus">Plus</span>
+            <img src="https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/plus_aef861.png" width="10px">  
+        </div>
+    </div>    
+    <div class="header2">    
+        <div class="search">
+            <input type="text" placeholder="Search for products brands and more" style="height: 32px; width:330px; font-size: 14px; outline: none; border: none;">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <div class="searchoptioncontener">
+                <div class="searchoptioncontent">
+                    <i class="fa-solid fa-arrow-rotate-left" style="color:rgba(136, 130, 130, 0.726); margin-top: 9px;margin-right: 300px;"></i>
+                    <h4>Discover more</h4>
+                </div>
+                <div class="searchoptioncontent">
+                    <i class="fa-solid fa-magnifying-glass" style="position:absolute; top: 8px"></i>
+                    <p>Mobiles</p>
+                </div>
+                <div class="searchoptioncontent">
+                    <i class="fa-solid fa-magnifying-glass"style="position:absolute; top: 47px"></i>
+                    <p>Shoes</p>
+                </div>
+                <div class="searchoptioncontent">
+                    <i class="fa-solid fa-magnifying-glass"style="position:absolute; top: 85px"></i>
+                    <p>T-shirt</p>
+                </div>
+                <div class="searchoptioncontent">
+                    <i class="fa-solid fa-magnifying-glass"style="position:absolute; top: 125px"></i>
+                    <p>Laptops</p>
+                </div>
+                <div class="searchoptioncontent">
+                    <i class="fa-solid fa-magnifying-glass"style="position:absolute; top: 163px"></i>
+                    <p>TV</p>
+                </div>
+                <div class="searchoptioncontent">
+                    <i class="fa-solid fa-magnifying-glass"style="position:absolute; top: 203px"></i>
+                    <p>Sharees</p>
+                </div>
+            </div>
+        </div>
+    </div>    
+        <button class="login">Login</button>
+        <div class="HoverLogin">
+            <div class="trangle-up"></div>
+            <div class="customer">
+                <h4>New Customer?</h4>
+                <h4 style="color:#2370f4">Sign up</h4>
+            </div>
+            <div class="loginoptioncontent">
+                <div class="logincontent">
+                    <i class="fa-solid fa-user"></i>
+                    <p>My Profile</p>
+                </div>
+                <div class="logincontent">
+                    <i class="fa-solid fa-circle-plus"></i>
+                    <p>Flip cart zone</p>
+                </div>
+                <div class="logincontent">
+                    <i class="fa-solid fa-arrow-up-z-a"></i>
+                    <p>Orders</p>
+                </div>
+                <div class="logincontent">
+                    <i class="fa-solid fa-heart"></i>
+                    <p>Wishlist</p>
+                </div>
+                <div class="logincontent">
+                    <i class="fa-solid fa-gift"></i>
+                    <P>Rewards</p>
+                </div>
+                <div class="logincontent">
+                    <i class="fa-solid fa-hand-holding-dollar"></i>
+                    <p>Gift cards</p>
+                </div>
+            </div>
+        </div>
+        <div class="iconname">
+        <a href="#" class="forHover" style= "text-decoration: none; font-size: 18px; margin: 0px 20px; font-size: 18px; line-height: 20px; font-weight: 500;">Become a Seller</a>
+        <a href="#" class="forhover2" style= "text-decoration: none; font-size: 18px; margin: 0px 20px;">
+            <i class="fa-solid fa-cart-shopping"></i>
+            Cart</a>
+        <a herf="#" navlink class="angledownicon" style="margin:0px 40px; font-size: 18px; color:white;">
+            More
+            <i class="fa-solid fa-angle-down moreicon"></i>
+            <div class="moreoptioncontener">
+                <div class="moreoptioncontent">
+                    <div class="moreoption">
+                        <i class="fa-solid fa-bell"></i>
+                        <p>  Notifcation</p>
+                    </div>
+                    <div class="moreoption">
+                        <i class="fa-solid fa-question"></i>
+                        <p>  24*7 Customer Support</p>
+                    </div>
+                    <div class="moreoption">
+                        <i class="fa-solid fa-chart-line"></i>
+                        <p>  Adevertise</p>
+                    </div>
+                    <div class="moreoption">
+                        <i class="fa-solid fa-download"></i>
+                        <p>  Download</p>
+                    </div>
+                </div>
+            </div>
+        </a>
+        </div>
+    </div>
+    <div class="header2">
+        <div class="header2product">
+            <a href="https://www.flipkart.com/offers-store?param=98574&fm=neo%2Fmerchandising&iid=M_5ec0c6cb-5bca-4d4b-b758-1a2c2528f9cf_1_DMEFXQX0ZIXD_MC.6OPAW1HHJZFH&otracker=hp_rich_navigation_1_1.navigationCard.RICH_NAVIGATION_Top%2BOffers_6OPAW1HHJZFH&otracker1=hp_rich_navigation_PINNED_neo%2Fmerchandising_NA_NAV_EXPANDABLE_navigationCard_cc_1_L0_view-all&cid=6OPAW1HHJZFH">
+                <img src="https://rukminim1.flixcart.com/flap/128/128/image/f15c02bfeb02d15d.png?q=100">
+                <p>Top offers</p>
+            </a>
+        </div> 
+        <div class="header2product">
+            <a href="https://www.flipkart.com/grocery-supermart-store?marketplace=GROCERY&param=11008801423232&fm=neo%2Fmerchandising&iid=M_01a7599e-bf76-4a5e-a3cf-d120c7076c85_1_DMEFXQX0ZIXD_MC.4BYE6NISISOE&otracker=hp_rich_navigation_9_1.navigationCard.RICH_NAVIGATION_Grocery_4BYE6NISISOE&otracker1=hp_rich_navigation_PINNED_neo%2Fmerchandising_NA_NAV_EXPANDABLE_navigationCard_cc_9_L0_view-all&cid=4BYE6NISISOE">
+                <img src="https://rukminim1.flixcart.com/flap/128/128/image/29327f40e9c4d26b.png?q=100">
+                <p>Grocery</p>
+            </a>
+        </div> 
+        <div class="header2product">
+            <a href="https://www.flipkart.com/mobile-phones-big-saving-days-dec22-eidj8fs-store?param=16&fm=neo%2Fmerchandising&iid=M_9fd03f4a-65ea-4b82-b30c-2bfb1a0b8009_1_DMEFXQX0ZIXD_MC.BYIXDBQAWBHQ&otracker=hp_rich_navigation_2_1.navigationCard.RICH_NAVIGATION_Mobiles%2B%2526%2BTablets_BYIXDBQAWBHQ&otracker1=hp_rich_navigation_PINNED_neo%2Fmerchandising_NA_NAV_EXPANDABLE_navigationCard_cc_2_L0_view-all&cid=BYIXDBQAWBHQ">
+                <img src="https://rukminim1.flixcart.com/flap/128/128/image/22fddf3c7da4c4f4.png?q=100">
+                <p>Mobiles</p>
+            </a>
+        </div> 
+        <div class="header2product">
+            <a href="https://www.flipkart.com/festive-offers-on-heating-cooling-appliances-store?otracker=clp_creative_card_3_3.creativeCard.CREATIVE_CARD_tv-and-appliances-big-saving-days-sale-store_DZXA5S13S64N&fm=neo%2Fmerchandising&iid=M_f6fbf4b7-c6c8-4c4c-af25-4614611af61b_3.DZXA5S13S64N&ppt=clp&ppn=festive-offers-on-home-appliances-for-you-store&ssid=71owtpo2mo0000001671174731831">
+                <img src="https://rukminim1.flixcart.com/flap/128/128/image/0ff199d1bd27eb98.png?q=100">
+                <p>Appliance</p>
+            </a>
+        </div> 
+        <div class="header2product">
+            <a href="https://www.flipkart.com/travel/flights?param=FKHPNavBSDDec22?param=98574&fm=neo%2Fmerchandising&iid=M_2b9eabd0-00bf-4268-8a1d-bbb721bdd88b_1_DMEFXQX0ZIXD_MC.9ODHZCZ094O6&otracker=hp_rich_navigation_8_1.navigationCard.RICH_NAVIGATION_Flights_9ODHZCZ094O6&otracker1=hp_rich_navigation_PINNED_neo%2Fmerchandising_NA_NAV_EXPANDABLE_navigationCard_cc_8_L0_view-all&cid=9ODHZCZ094O6">
+                <img src="https://rukminim1.flixcart.com/flap/128/128/image/71050627a56b4693.png?q=100">
+                <p>Travel</p>
+            </a>
+        </div> 
+        <div class="header2product">
+            <a href="https://www.flipkart.com/big-saving-days-laptops-store?param=67&otracker=clp_creative_card_2_9.creativeCard.CREATIVE_CARD_elec-big-saving-days-dec-sale-store_71CKV27XXP25&fm=neo%2Fmerchandising&iid=M_3adf3bbd-374f-4c5e-a0b6-ad224c4024cf_9.71CKV27XXP25&ppt=hp&ppn=homepage&ssid=n4u4wstfr40000001671175001903">
+                <img src="https://rukminim1.flixcart.com/flap/128/128/image/69c6589653afdb9a.png?q=100">
+                <p>Electronics</p>
+            </a>
+        </div>
+        <div class="header2product">
+            <a href="https://www.flipkart.com/fashion-bsd-dec22-trendy-store?param=98574&fm=neo%2Fmerchandising&iid=M_ec90f667-da0b-4750-93f8-971f572ad37a_1_DMEFXQX0ZIXD_MC.CPZ5PBSAJQKR&otracker=hp_rich_navigation_5_1.navigationCard.RICH_NAVIGATION_Fashion_CPZ5PBSAJQKR&otracker1=hp_rich_navigation_PINNED_neo%2Fmerchandising_NA_NAV_EXPANDABLE_navigationCard_cc_5_L0_view-all&cid=CPZ5PBSAJQKR">
+                <img src="https://rukminim1.flixcart.com/flap/128/128/image/c12afc017e6f24cb.png?q=100">
+                <p>Fashion</p>
+            </a>
+        </div>
+        <div class="header2product">
+            <a href="https://www.flipkart.com/offers-list/home-furnishings?screen=dynamic&pk=themeViews%3DHF-Vernac%3ADesktop~widgetType%3DdealCard~contentType%3Dneo&wid=4.dealCard.OMU_4&otracker=clp_omu_Home%2BFurnishings_bsd-sale-hnf-dec-22-store_4&otracker1=clp_omu_PINNED_neo%2Fmerchandising_Home%2BFurnishings_NA_wc_view-all_4">
+                <img src="https://rukminim1.flixcart.com/flap/128/128/image/ab7e2b022a4587dd.jpg?q=100">
+                <p>Home</p>
+            </a>
+        </div>
+        <div class="header2product">
+            <a href="https://www.flipkart.com/big-saving-days-sale-dec22-store?param=98574&fm=neo%2Fmerchandising&iid=M_bcb71e13-2e7b-4b8b-a679-13a95352149d_1_DMEFXQX0ZIXD_MC.NMKLQFISEEWO&otracker=hp_rich_navigation_6_1.navigationCard.RICH_NAVIGATION_Beauty_NMKLQFISEEWO&otracker1=hp_rich_navigation_PINNED_neo%2Fmerchandising_NA_NAV_EXPANDABLE_navigationCard_cc_6_L0_view-all&cid=NMKLQFISEEWO">
+                <img src="https://rukminim1.flixcart.com/fk-p-flap/128/128/image/5f09b2d254acb48a.png?q=100">
+                <p>Beauty</p>
+            </a>
+        </div>
+    </div>
+    <div class="Slider">
+        <div class="sliderbutton btnleft">
+            <button class="btn"><i class="fa-solid fa-angle-left"></i></button>
+        </div>
+        <div class="sliderimagemain">
+            <a href="https://www.flipkart.com/big-savings-days-store?otracker=hp_bannerads_2_2.bannerAdCard.BANNERADS_as_ACIPSJSRSPT9">
+                <img class="sliderimage"src="https://rukminim1.flixcart.com/fk-p-flap/1688/280/image/41502fc141aea237.jpg?q=50">
+            </a>
+        </div>
+        <div class="sliderbutton btnright">
+            <button class="btn"><i class="fa-solid fa-angle-right"></i></button>
+        </div>
+    </div>
+    <div class="header4">
+        <div>
+            <img class="photo" src="https://rukminim1.flixcart.com/fk-p-flap/278/278/image/7593e7b6640822c1.jpg?q=90">
+            <h2 class="content"> Best of Electronics</h2>
+            <div class="box"> 
+                <a href="https://www.flipkart.com/offers-list/top-offers?screen=dynamic&pk=themeViews%3DEvents-Topoffers%3ADeal-card~widgetType%3DdealCard~contentType%3Dneo&wid=4.dealCard.OMU_4&otracker=hp_omu_Top%2BOffers_4&otracker1=hp_omu_PINNED_neo%2Fmerchandising_Top%2BOffers_NA_wc_view-all_4">
+                    <p class="view">VIEW ALL</p>
+                </a>    
+            </div>
+        </div>
+    </div>
+    <div class="h4side">
+        <div class="h4product">
+            <a href="https://www.coursera.org/learn/introcss?utm_medium=institutions&utm_source=umich&utm_campaign=adwords-web-design-for-everybody-introduction-to-CSS3&utm_term=html%20css%20free%20course&gclid=Cj0KCQjwxveXBhDDARIsAI0Q0x13NTWWPd8E-uqfz0hf3KYyUy_PSnL-xKOrv38KMwWaIKgKkI7EN4saAuWkEALw_wcB">
+                <img class="goods"src="https://rukminim1.flixcart.com/image/200/200/l5jxt3k0/dslr-camera/m/n/a/-original-imagg7hsggshhwbz.jpeg?q=70">
+            </a>
+            <p class="goodsname">Top microless camera</p>
+            <P class="price">From ₹2000</P>
+            <p class="company"> Canon, Sony</p>
+        </div>
+        <div class="h4product">
+            <img class="goods" src="https://rukminim1.flixcart.com/image/200/200/kmp7ngw0/monitor/j/z/h/s2721hn-27-py0df-dell-original-imagfjphuywuh2a7.jpeg?q=70">
+            <p class="goodsname">Moniter</p>
+            <p class="price">From ₹1000</p>
+            <p class="company">Thamson</p>
+        </div>
+        <div class="h4product">
+            <img class="goods" src="https://rukminim1.flixcart.com/image/200/200/jlph9jk0/cycle/h/f/k/skyper-26t-sskp26bk0001-16-hero-original-imaf8ru5xysfgtmx.jpeg?q=70">
+            <p class="goodsname">Cycle</p>
+            <p class="price">From ₹1300</p>
+            <p class="company">HERO</p>
+        </div>
+        <div class="h4product">
+            <img class="goods" src="https://rukminim1.flixcart.com/image/200/200/printer/j/j/y/hp-laserjet-m1005-multifunction-original-imadxhzpeb9qbrfg.jpeg?q=70">
+            <p class="goodsname">Printer</p>
+            <p class="price">Shop Now!</p>
+            <p class="company">S.K</p>
+        </div>
+    </div>    
+</body>
+</html>
